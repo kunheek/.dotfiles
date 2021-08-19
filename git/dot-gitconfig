@@ -4,3 +4,4 @@
   username = knhkim
 [core]
   editor = vi
+  excludesfile = ~/.gitignore
