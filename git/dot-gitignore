@@ -1,6 +1,5 @@
-logs/
 .vscode/
-test.*
+runs/
 
 ## adopted from https://github.com/github/gitignore/
 ##########
