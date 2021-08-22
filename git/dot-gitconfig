@@ -5,3 +5,8 @@
 [core]
   editor = vi
   excludesfile = ~/.gitignore
+[credential]
+	helper = 
+	helper = /usr/bin/git-credential-manager-core
+[credential "https://dev.azure.com"]
+	useHttpPath = true
