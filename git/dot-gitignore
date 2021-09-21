@@ -1,6 +1,7 @@
 .vscode/
 runs/
-tmp*
+tmp/
+tmp.*
 
 #########
 # Slurm #
