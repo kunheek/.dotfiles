@@ -2,6 +2,13 @@
 runs/
 tmp*
 
+#########
+# Slurm #
+#########
+*.err
+submit.sh
+slurm/
+
 ## adopted from https://github.com/github/gitignore/
 ##########
 # python #
