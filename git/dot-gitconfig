@@ -1,12 +1,7 @@
 [user]
-  name = Kunhee
-  email = kunkim@postech.ac.kr
-  username = knhkim
+	name = Kunhee
+	email = kunkim@postech.ac.kr
+	username = kunheek
 [core]
-  editor = vi
-  excludesfile = ~/.gitignore
-[credential]
-	helper = 
-	helper = /usr/bin/git-credential-manager-core
-[credential "https://dev.azure.com"]
-	useHttpPath = true
+	editor = vi
+	excludesfile = ~/.gitignore
