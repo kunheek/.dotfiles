@@ -2,18 +2,14 @@
 runs/
 tmp/
 tmp.*
-
-#########
-# Slurm #
-#########
+# slurm
 *.err
 submit.sh
 slurm/
 
-## adopted from https://github.com/github/gitignore/
-##########
-# python #
-##########
+# adopted from https://github.com/github/gitignore/
+
+# ============ Python ============
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -154,9 +150,7 @@ dmypy.json
 cython_debug/
 
 
-#########
-# latex #
-#########
+# ============ LaTex ============
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
