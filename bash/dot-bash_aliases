@@ -1,7 +1,12 @@
-# Navigation.
+# Navigation
 alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
 
-# Slurm.
+# Functions
+degreenize () {
+    chmod -R a-x,o-w,+X $1
+}
+
+# Slurm
 alias sq="squeue | grep kunkim"
