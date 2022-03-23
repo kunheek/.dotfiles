@@ -3,10 +3,7 @@ alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
 
-# Functions
-degreenize () {
-    chmod -R a-x,o-w,+X $1
-}
+alias degreenize="chmod -R a-x,o-w,+X"
 
 # Slurm
 alias sq="squeue | grep kunkim"
