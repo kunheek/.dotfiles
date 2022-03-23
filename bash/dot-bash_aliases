@@ -6,4 +6,4 @@ alias ....="cd ../../../"
 alias degreenize="chmod -R a-x,o-w,+X"
 
 # Slurm
-alias sq="squeue | grep kunkim"
+alias sq="squeue --user $USER"
