@@ -1,0 +1,31 @@
+download_dropbox_url () {
+    # Make sure 'wget' and 'unzip' are installed.
+    command -v wget >/dev/null 2>&1 || {
+        echo "require 'wget' but it's not installed. Aborting." >&2; exit 1;
+    }
+    command -v unzip >/dev/null 2>&1 || {
+        echo "require 'unzip' but it's not installed. Aborting." >&2; exit 1;
+    }
+    local URL=$1
+    local DIR=$2
+
+    # get filename from url.
+    local arrURL=(${URL//// })  # {IN//'split symbol'/ }
+    local filename=${arrURL[-1]}
+    filename=$(echo "$filename" | sed -e "s/"?dl=0"//")
+
+    local out_file=$DIR/$filename
+    mkdir -p $2
+    wget -N $URL -O $out_file
+    echo "$out_file"
+}
+
+download_unzip_dropbox_url () {
+    local URL=$1
+    local DIR1=$2  # download directory.
+    local DIR2=$3  # unzip directory.
+
+    local filename=$(download_dropbox_url $URL $DIR1)
+    unzip $filename -d $DIR2
+    rm $filename
+}
